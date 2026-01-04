@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Layout Sample</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ffffff;
+        }
+
+        .container {
+            position: relative;
+            width: 300px;
+            height: 300px;
+        }
+
+        .square {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+        }
+
+        .red {
+            background: #ff8a8a;
+            top: 0;
+            left: 0;
+        }
+
+        .blue {
+            background: #7f8cf1;
+            top: 60px;
+            left: 60px;
+            z-index: 2;
+        }
+
+        .green {
+            background: #4ef0a0;
+            top: 120px;
+            left: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="square red"></div>
+        <div class="square blue"></div>
+        <div class="square green"></div>
+    </div>
+</body>
+
+</html>
